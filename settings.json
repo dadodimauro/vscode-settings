@@ -1,0 +1,67 @@
+{
+    // "python.testing.pytestArgs": [
+    //     "src"
+    // ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.organizeImports": "explicit"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    "vsicons.associations.folders": [
+        {
+            "icon": "test",
+            "extensions": [
+                "unit"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "test",
+            "extensions": [
+                "compatibility"
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "template",
+            "extensions": [
+                "schemas",
+                "schema",
+            ],
+            "format": "svg"
+        },
+        {
+            "icon": "log",
+            "extensions": [
+                "report",
+                "reports",
+            ],
+            "format": "svg"
+        }
+    ],
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    }
+}
