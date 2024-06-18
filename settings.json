@@ -63,5 +63,8 @@
     "[css]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "angularCompilerOptions": {
+      "strictTemplates": true
     }
 }
