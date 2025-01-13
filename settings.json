@@ -4,10 +4,17 @@
     // ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
+    "notebook.defaultFormatter": "charliermarsh.ruff",
     "notebook.formatOnSave.enabled": true,
     "notebook.codeActionsOnSave": {
         "notebook.source.organizeImports": "explicit"
     },
+    "SQL-Formatter-VSCode.identifierCase": "upper",
+    "SQL-Formatter-VSCode.dataTypeCase": "upper",
+    "SQL-Formatter-VSCode.expressionWidth": 80,
+    "SQL-Formatter-VSCode.newlineBeforeSemicolon": true,
+    "SQL-Formatter-VSCode.dialect": "postgresql",
+    "python.analysis.typeCheckingMode": "standard",
     "[python]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "charliermarsh.ruff",
@@ -15,7 +22,30 @@
             "source.organizeImports": "explicit"
         }
     },
-    "python.analysis.typeCheckingMode": "standard",
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[sql]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc",
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
     "vsicons.associations.folders": [
         {
             "icon": "test",
@@ -46,22 +76,21 @@
                 "reports",
             ],
             "format": "svg"
+        },
+    ],
+    "vsicons.associations.files": [
+        {
+            "icon": "config",
+            "extensions": [
+                "env",
+                "envs",
+                "test.env",
+                "toml"
+            ],
+            "format": "svg"
         }
     ],
-    "[javascript]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[typescript]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[html]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[css]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    }
+    "python.analysis.extraPaths": [
+        "./src/staff_migration"
+    ],
 }
