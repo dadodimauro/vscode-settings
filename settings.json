@@ -90,7 +90,19 @@
             "format": "svg"
         }
     ],
-    "python.analysis.extraPaths": [
-        "./src/staff_migration"
-    ],
+    "yaml.completion": true,
+    "yaml.format.enable": false,
+    "yaml.schemaStore.enable": true,
+    "yaml.validate": false,
+    "yaml.schemas": {
+        "https://json.schemastore.org/kustomization.json": "kustomization.yaml",
+        "Kubernetes": [
+            "*",
+            "!kustomization.yaml"
+        ],
+        "https://raw.githubusercontent.com/garethr/openshift-json-schema/master/v4.1.0/all.json": [
+            "*",
+            "!kustomization.yaml"
+        ]
+    }
 }
